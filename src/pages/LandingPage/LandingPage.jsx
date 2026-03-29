@@ -3,6 +3,7 @@ import Hero from "./sections/Hero"
 import Stats from "./sections/Stats"
 import DashboardPreview from "./sections/DashboardPreview"
 import Features from "./sections/Features"
+import HowItWorks from "./sections/HowItWorks"
 
 export default function LandingPage() {
     return (
@@ -15,6 +16,7 @@ export default function LandingPage() {
             <Stats/>
             <DashboardPreview/>
             <Features/>
+            <HowItWorks/>
         </div>
         </>
     )
