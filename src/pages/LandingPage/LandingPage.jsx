@@ -4,6 +4,8 @@ import Stats from "./sections/Stats"
 import DashboardPreview from "./sections/DashboardPreview"
 import Features from "./sections/Features"
 import HowItWorks from "./sections/HowItWorks"
+import Testimonials from "./sections/Testimonials"
+import Pricing from "./sections/Pricing"
 
 export default function LandingPage() {
     return (
@@ -17,6 +19,8 @@ export default function LandingPage() {
             <DashboardPreview/>
             <Features/>
             <HowItWorks/>
+            <Testimonials/>
+            <Pricing/>
         </div>
         </>
     )
