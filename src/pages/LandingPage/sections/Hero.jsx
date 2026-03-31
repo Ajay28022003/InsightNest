@@ -7,8 +7,8 @@ export default function Hero() {
                     <span className="text-slate-400">Powered By AI</span>
                 </div>
                 <h1 className="text-5xl md:text-8xl font font-extrabold  tr mb-6 max-w-6xl leading-tight">
-                    Summarize <span className="bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">knowledge.</span><br />
-                    Save ideas.<span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Learn Faster.</span>
+                    Summarize <span className="bg-linear-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent">knowledge.</span><br />
+                    Save ideas.<span className="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"> Learn Faster.</span>
                 </h1>
                 <p className="text-slate-500 text-2xl max-w-3xl mb-10">
                     Transform any article, PDF, or URL into bite-sized insights with AI.<br />

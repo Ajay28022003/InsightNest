@@ -11,7 +11,7 @@ export const pricing = [{
         "Community trending",
     ],
     buttonText:"Start Free",
-    isPopular:"false"
+    isPopular:false
 },{
     id:2,
     tier:"Pro",
@@ -28,7 +28,7 @@ export const pricing = [{
         "Priority AI processing",
     ],
     buttonText:"Start Pro",
-    isPopular:"true"
+    isPopular:true
 },{
     id:3,
     tier:"Team",
@@ -45,5 +45,5 @@ export const pricing = [{
         "Priority AI processing",
     ],
     buttonText:"Contact Sales",
-    isPopular:"false"
+    isPopular:false
 }]
