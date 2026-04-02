@@ -10,6 +10,6 @@ export const menuItems = [
 ]
 
 export const accountItems = [
-    {id:1,title:"Profile",icon:<User/>,path:"/profile"},
-    {id:2,title:"Settings",icon:<Settings/>,path:"/settings"}
+    {id:1,title:"Profile",icon:<User size={20}/>,path:"/profile"},
+    {id:2,title:"Settings",icon:<Settings size={20}/>,path:"/settings"}
 ]
