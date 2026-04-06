@@ -4,7 +4,7 @@ export default function TopBar() {
 
     return(
         <>
-            <header className="h-20 bg-slate-900 flex items-center justify-between px-8 sticky top-0 z-10">
+            <header className="h-20 bg-slate-900/10 flex items-center justify-between px-8 border-b border-slate-800 sticky top-0 z-10">
                     <div className="relative w-96 hidden:md-block">
                         <Search className="absolute left-4 top-1/2 transform -translate-y-1/2" size={18}/>
                         <input type="text" placeholder="Search insights, categories, topics..." 

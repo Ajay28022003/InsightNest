@@ -1,15 +1,16 @@
-import { NavLink } from "react-router-dom"
+import { NavLink,Link } from "react-router-dom"
 import { accountItems, menuItems } from "../../data/sidebarData"
 import { LogOut } from "lucide-react"
 
 export default function SideBar() {
     return (
         <>
-            <aside className="w-64 h-full flex flex-col bg-slate-900 border-r border-slate-800 text-white p-6">
-                <div className="text-xl font-bold mb-8">
-                    <span>InsightNest AI</span>
+            <aside className="w-64 h-full flex flex-col bg-slate-900/10 border-r border-slate-800 text-white p-6">
+                <div className="text-xl font-bold mb-4 cursor-pointer">
+                   <Link to="/"><span>InsightNest AI</span></Link> 
                 </div>
-                <div className="flex-1 overflow-y-auto mt-4 mb-4">
+                <div className="  w-full tracking-tighter text-slate-800">--------------------------------</div>
+                <div className="flex-1 overflow-y-auto mt-4 mb-4 ">
                     <span className="text-xs text-slate-600 block p-2">MENU</span>
                     <ul>
                         {
@@ -60,9 +61,7 @@ export default function SideBar() {
                             <span className="text-xs text-slate-500">Pro Plan</span>
                         </div>
                     </div>
-                    <div className="bg-violet-600 px-1 py-2 rounded-xl hover:bg-slate-600">
-                        <LogOut />
-                    </div>
+                    <LogOut size={18} className="text-slate-500 hover:text-white cursor-pointer transition-colors" />
                 </div>
             </aside>
         </>
