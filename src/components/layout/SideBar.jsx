@@ -1,12 +1,13 @@
 import { NavLink,Link } from "react-router-dom"
 import { accountItems, menuItems } from "../../data/sidebarData"
-import { LogOut } from "lucide-react"
+import { Brain, LogOut } from "lucide-react"
 
 export default function SideBar() {
     return (
         <>
             <aside className="w-64 h-full flex flex-col bg-slate-900/10 border-r border-slate-800 text-white p-6">
-                <div className="text-xl font-bold mb-4 cursor-pointer">
+                <div className="text-xl font-bold mb-4 cursor-pointer flex gap-4 items-center justify-center">
+                    <Brain  color = "violet" className=" "/>
                    <Link to="/"><span>InsightNest AI</span></Link> 
                 </div>
                 <div className="  w-full tracking-tighter text-slate-800">--------------------------------</div>
