@@ -28,24 +28,24 @@ export const trending = [
 
 export const streak = [
     {
-        day: "M", done: true,
+        id:1,day: "M", done: true,
     },
     {
-        day: "T", done: true
+        id:2,day: "T", done: true
     },
     {
-        day: "W", done: true,
+        id:3,day: "W", done: true,
     },
     {
-        day: "T", done: true,
+        id:4,day: "T", done: true,
     },
     {
-        day: "F", done: true,
+        id:5,day: "F", done: true,
     },
     {
-        day: "S", done: false
+        id:6,day: "S", done: false
     },
     {
-        day: "S", done: false
+        id:7,day: "S", done: false
     }
 ]

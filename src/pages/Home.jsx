@@ -10,7 +10,7 @@ export default function Home() {
                 <div className="flex-1 flex flex-col gap-7  ">
                     <div>
                         <h3 className="text-2xl font-bold">
-                            Good morning, John 👋
+                            Good Morning, John 👋
                         </h3>
                         <p className="text-slate-600">Discover today's best insights curated for you.</p>
                     </div>
@@ -36,7 +36,7 @@ export default function Home() {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">{
-                        articles.map((a) => (
+                        articles.map((a,index) => (
                             <div key={a.id} className="gap-3 border border-slate-800/80 bg-[#0B0B14] p-5 rounded-xl flex flex-col hover:border-slate-700 transition-colors">
                                 <span className={`text-[10px] w-fit font-semibold px-2.5 py-1 rounded-full ${a.categoryColor}`}>{a.category}</span>
                                 <h4 className="text-white font-semibold text-lg mt-1 ">
@@ -69,9 +69,9 @@ export default function Home() {
                         <div className="flex flex-col gap-5">
                             {
                                 trending.map((t, index) => (
-                                    <div className="flex justify-between items-center">
+                                    <div  key ={t.id} className="flex justify-between items-center">
                                         <div className="flex gap-4 items-center">
-                                            <span className="text-slate-700 text-xs">{t.id}</span>
+                                            <span  className="text-slate-700 text-xs">{t.id}</span>
                                             <span className="text-violet-100 text-sm">{t.title}</span>
                                         </div>
                                         <span className="text-xs text-slate-700">{t.views}</span>
@@ -101,9 +101,6 @@ export default function Home() {
 
                             </div>
                         </div>
-                        <div>
-
-                        </div>
                     </div>
                     <div>
                         <div className="flex justify-between mb-4 items-center">
@@ -118,7 +115,7 @@ export default function Home() {
                             {/* Mapping the day circles! */}
                             <div className="flex items-center justify-between gap-1">
                                 {streak.map((s, index) => (
-                                    <div key={index} className="flex flex-col items-center gap-2">
+                                    <div key={s.id} className="flex flex-col items-center gap-2">
                                         {/* If the day is 'done', it's orange. If not, it's dark gray. */}
                                         <div className={`w-7 h-7 rounded-full flex items-center justify-center ${s.done ? 'bg-orange-900/40 text-orange-500 border border-orange-700/50' : 'bg-[#0f0f1a] border border-slate-800'}`}>
                                             {s.done && <Check size={12} strokeWidth={3} />}
